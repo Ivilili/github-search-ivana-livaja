@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styles/App.css';
+import Search from './components/Search';
+
+function App({ user, value, handleSubmit, handleChange }) {
+	return (
+		<div className="App">
+			<img src="https://i.postimg.cc/fRtjq5Zx/iconmonstr-github-1-240.png" alt="github icon" className="hero" />
+			<h1 className="title">GitHub Search</h1>
+			<Search value={value} onChange={handleChange} handleSubmit={handleSubmit} />
+		</div>
+	);
 }
 
 export default App;
