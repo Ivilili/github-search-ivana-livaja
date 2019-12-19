@@ -18,7 +18,7 @@ Next, load all the dependencies
 
 ```
 cd github-search-ivana-livaja
-npm install
+yarn install
 
 ```
 
@@ -27,7 +27,7 @@ npm install
 In the project directory run:
 
 ```
-npm start
+yarn start
 
 ```
 
@@ -35,8 +35,11 @@ npm start
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Note
-This project uses GitHub api v4 [https://developer.github.com/v4/](https://developer.github.com/v4/) and
-to access api user needs to [create a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token)
+### Note for setting up development
+
+* This project uses GitHub api v4 [https://developer.github.com/v4/](https://developer.github.com/v4/) and
+to access api user needs to [create a personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token),
+* After creating token, create a `.env` file in the root directory of a project,
+* Inside `.env` create environment variable `REACT_APP_API_KEY='insert-your-token-here'`.
 
 
