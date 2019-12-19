@@ -15,7 +15,7 @@ const GET_USER = gql`
 			login
 			url
 			email
-			repositories(last: 20) {
+			repositories(last: 100) {
 				edges {
 					node {
 						id

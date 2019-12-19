@@ -5,7 +5,7 @@ import Profile from './Profile';
 class Search extends Component {
 	state = {
 		search: '',
-		user: 'sun'
+		user: ''
 	};
 	handleChange = (e) => {
 		this.setState({
