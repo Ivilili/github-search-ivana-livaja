@@ -1,13 +1,19 @@
 .card {
 	max-width: 460px;
 	color: #ffffff;
-	border: solid 2px #ffffff;
+	border-bottom: solid 2px #ffffff;
 	margin: auto;
 	margin-top: 2rem;
 	padding-top: 2rem;
 }
-.card:hover {
+
+.profile {
+	border-bottom: solid 2px #ffffff;
 	box-shadow: 5px 5px 15px rgba(151, 146, 146, 0.9);
+}
+.profile:hover,
+.list:hover {
+	box-shadow: 8px 10px 26px rgba(151, 146, 146, 0.9);
 }
 .card-img {
 	width: 140px;
@@ -23,6 +29,15 @@
 }
 .card p a {
 	text-decoration: none;
+	color: #ffffff;
+}
+.list {
+	border-bottom: solid 1px #ffffff;
+	padding-bottom: 1rem;
+	padding-right: 0.6rem;
+	box-shadow: 5px 5px 15px rgba(151, 146, 146, 0.9);
+}
+.loading {
 	color: #ffffff;
 }
 

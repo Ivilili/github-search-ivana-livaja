@@ -34,22 +34,24 @@ const Profile = ({ user }) => (
 		<Query query={GET_USER} variables={{ user }}>
 			{({ loading, error, data }) => (
 				<React.Fragment>
-					{loading && <div>Loading ...</div>}
+					{loading && <div className="loading">Loading ...</div>}
 					{error && <div>{console.log(error)}</div>}
 					{data &&
 					data.user && (
 						<div className="card">
-							<img src={data.user.avatarUrl} alt={data.user.login} className="card-img" />
-							<p>
-								<FaUserAlt className="icon" /> {data.user.login}
-							</p>
-							<p>
-								<FaEnvelope className="icon" />
-								{data.user.email ? data.user.email : 'No email available'}
-							</p>
-							<p>
-								<FaGithub className="icon" /> <a href={data.user.url}>{data.user.url} </a>
-							</p>
+							<div className="profile">
+								<img src={data.user.avatarUrl} alt={data.user.login} className="card-img" />
+								<p>
+									<FaUserAlt className="icon" /> {data.user.login}
+								</p>
+								<p>
+									<FaEnvelope className="icon" />
+									{data.user.email ? data.user.email : 'No email available'}
+								</p>
+								<p>
+									<FaGithub className="icon" /> <a href={data.user.url}>{data.user.url} </a>
+								</p>
+							</div>
 							<RepositoryList repositories={data.user.repositories} />
 						</div>
 					)}

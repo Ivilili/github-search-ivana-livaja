@@ -6,7 +6,6 @@ const RepositoryList = ({ repositories }) =>
 		return (
 			<ul key={e.node.id} className="list">
 				<li className="list-item-title">
-					{' '}
 					<FaBook className="icon" /> {e.node.name}
 				</li>
 				<li className="list-item">{e.node.description}</li>
