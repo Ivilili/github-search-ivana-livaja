@@ -1,6 +1,10 @@
 # GitHub Search App
 GitHub Search app is created with React, using GitHub API v4.
 Also, Apollo Client is used to manage GraphQL query.
+
+[![ezgif.com-video-to-gif18b176e5dc9ef2aa.gif](https://s5.gifyu.com/images/ezgif.com-video-to-gif18b176e5dc9ef2aa.gif)](https://gifyu.com/image/mMyl)
+
+
 User can search for a particular GitHub account name, and if there is a match application displays:
 
 * User profile (profile picture, user name and email,link to GitHub profile)  
