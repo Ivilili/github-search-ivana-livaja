@@ -32,10 +32,10 @@ const GET_USER = gql`
 const Profile = ({ user }) => (
 	<div>
 		<Query query={GET_USER} variables={{ user }}>
-			{({ loading, error, data }) => (
+			{({ loading, data }) => (
 				<React.Fragment>
-					{loading && <div className="loading">Loading ...</div>}
-					{error && <div>{console.log(error)}</div>}
+					{loading && <div className="loader" />}
+
 					{data &&
 					data.user && (
 						<div className="card">

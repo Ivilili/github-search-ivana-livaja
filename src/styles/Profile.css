@@ -1,5 +1,11 @@
+ul,
+li {
+	list-style: none;
+}
 .card {
 	max-width: 460px;
+	display: flex;
+	flex-direction: column;
 	color: #ffffff;
 	border-bottom: solid 2px #ffffff;
 	margin: auto;
@@ -44,21 +50,19 @@
 ul .list-item,
 .list-item-title,
 .list-item-link {
-	list-style: none;
 	text-align: left;
 	margin-top: 1rem;
 }
 ul .list-item {
-	list-style: none;
 	font-size: 1rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	color: #d3d3d3;
 	font-style: italic;
+	overflow: hidden;
 }
 ul .list-item-title {
 	text-transform: uppercase;
-	margin-top: 3rem;
 	font-size: 1.4rem;
 	font-weight: 500;
 	line-height: 1.8em;
@@ -70,4 +74,32 @@ ul .list-item-link a {
 }
 .icon {
 	padding-right: 0.3rem;
+}
+
+.loader {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+}
+
+.loader:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #ffffff;
+	border-color: #ffffff transparent #d2d3d3 transparent;
+	animation: loader 1.2s linear infinite;
+	transition: all 0.5s ease;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
